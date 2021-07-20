@@ -57,6 +57,11 @@
             update( _error ) // 計算に失敗した場合は、そのエラーの内容を表示する
         }
     }
+　  function enter(){
+    if( window.event.keyCode == 13 ){
+      document.calcform.calc();
+    }
+  }
     </script>
 	 <br>
     <button class="btn btn--calc btn--radius" onclick="append( '1' )" >1&nbsp;</button>
